@@ -8,6 +8,7 @@ public class Globals {
     private static float weight;
     private static boolean intromode=true; //true=new user; false=updating user
     private static boolean usertype=false; //false=client; true=trainer
+    public static boolean checkIfFirstTime=true;
 
     public static void setUsername(String u) {
         username=u;
