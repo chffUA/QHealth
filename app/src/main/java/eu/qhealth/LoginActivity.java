@@ -29,7 +29,8 @@ public class LoginActivity extends FragmentActivity {
         StrictMode.setThreadPolicy(policy);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        new DBHandler(this).fakeDB();
+        
+        if (Globals.checkIfFirstTime) new DBHandler(this).fakeDB();
     }
 
 
