@@ -16,16 +16,19 @@ No entanto, a aplicação não irá funcionar se esta linha estiver comentada na
 Logins:
 
 User: test
+
 Pass: p
 
 (cliente, já tem treinador e plano definidos com todos os tipos de exercício)
 
 User: testetr
+
 Pass: p
 
 (treinador, tem vários clientes)
 
 User: test7
+
 Pass: p7
 
 (cliente sem treinador, tem plano vazio e deve aparecer em Client Approval)
@@ -35,13 +38,17 @@ Pass: p7
 Outros logins:
 
 User: test2
+
 Pass: p2
 
 User: test3
+
 Pass: p3
 
 User: test5
+
 Pass: p5
 
 User: supertrainer
+
 Pass: ps
