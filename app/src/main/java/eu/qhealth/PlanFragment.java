@@ -112,6 +112,7 @@ public class PlanFragment extends Fragment {
                                                 adp.update(groupPosition);
                                                 Toast.makeText(getActivity(), getString(R.string.score)+" 10.0.",
                                                         Toast.LENGTH_LONG).show();
+                                                notifyUser();
                                             }
                                         } catch (Exception e) {
                                             Toast.makeText(getActivity(), getString(R.string.planerror),
