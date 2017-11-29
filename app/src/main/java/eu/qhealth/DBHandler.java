@@ -89,10 +89,6 @@ public class DBHandler extends SQLiteOpenHelper {
         return 0;
     }
     public void fakeDB(){
-        if (!Globals.checkIfFirstTime) {
-            return;
-        }
-
         SQLiteDatabase db = this.getWritableDatabase();
         onUpgrade(db, 1,1);
 
