@@ -89,7 +89,7 @@ public class DBHandler extends SQLiteOpenHelper {
         return 0;
     }
     public void fakeDB(){
-        if (!isEmpty()) {
+        if (!Globals.checkIfFirstTime) {
             return;
         }
 
@@ -194,6 +194,8 @@ public class DBHandler extends SQLiteOpenHelper {
         addAndLinkExercise(e2,u);
         Exercises e3 = new Exercises("Sleep","Sleep at least 8 hours.");
         addAndLinkExercise(e3,u);
+        
+        Globals.checkIfFirstTime=false;
 
     }
     public User getAllUserStats(String n) {
